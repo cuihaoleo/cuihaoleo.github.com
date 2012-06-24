@@ -2,7 +2,7 @@
 
 body {
   padding:50px;
-  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font:14px/1.4 sans-serif;
   color:#777;
   font-weight:300;
 }
@@ -21,7 +21,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size:28px;
+  font-size:24px;
 }
 
 h2 {
@@ -118,11 +118,11 @@ header ul {
   border-radius:5px;
   border:1px solid #d2d2d2;
   box-shadow:inset #fff 0 1px 0, inset rgba(0,0,0,0.03) 0 -1px 0;
-  width:270px;
+  width:290px;
 }
 
 header li {
-  width:89px;
+  width:94px;
   float:left;
   border-right:1px solid #d2d2d2;
   height:40px;
@@ -133,8 +133,9 @@ header ul a {
   font-size:11px;
   color:#999;
   display:block;
-  text-align:center;
-  padding-top:6px;
+  text-align:left;
+  padding-top:5px;
+  padding-left:6px;
   height:40px;
 }
 
@@ -144,13 +145,13 @@ strong {
 }
 
 header ul li + li {
-  width:88px;
+  width:95px;
   border-left:1px solid #fff;
 }
 
 header ul li + li + li {
   border-right:none;
-  width:89px;
+  width:96px;
 }
 
 header ul a strong {
@@ -253,3 +254,5 @@ footer {
     color:#444;
   }
 }
+
+.hidden{display:none}
