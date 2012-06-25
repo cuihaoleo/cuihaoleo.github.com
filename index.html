@@ -8,13 +8,10 @@
   <link rel="shortcut icon" type="image/x-icon" href="faviconhere.ico" />
 
   <link rel="stylesheet" href="stylesheets/styles.css">
-  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <!--[if lt IE 9]>
   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-
-  <script type="text/javascript" src="javascripts/tab.js"></script>
 </head>
 
 <body onload="initTab('tab')">
@@ -41,18 +38,15 @@
     </header>
 
     <section>
-      <div class="tab" id="tab">
-        <ul>
-          <li class="s"><a href="#href_zh" id="h_zh">　中文：自我介绍</a></li>
-          <li><a href="#href_ja" id="h_ja">日本語：自己紹介</a></li>
-          <li><a href="#href_en" id="h_en">English: About me</a></li>
-        </ul>
-      </div>  
-
+      <ul id="tab_nav">
+        <li><a href="#c_zh">中文</a></li>
+        <li><a href="#c_ja">日本語</a></li>
+        <li><a href="#c_en">English</a></li>
+      </ul>
     
+      <div id="tab_content">
       <!--这里是中文部分-->
       <div id="c_zh">
-
 <h3>我</h3>
 
 <pre>姓名：崔灏（Cuī Hào）
@@ -68,12 +62,12 @@ QQ：515166698
 <p>略懂编程，善C、Python、Pascal，略通C++、Visual Basic、汇编。投身开源建设，主用Archlinux系统，闲时维护AUR软件包、译外夷之文档。好鼓捣软件，所得不多。</p>
 <p>吾好上机之事，而志不在程序员之流。愚以为随教育之普及，明日善编程之士必广。人人皆为程序员，谁以为主业乎？</p>
 <p>人类科学之建设，任重道远，吾志所在也。人言成事在天、前途未卜，而毕生得见自然之胜景、宇宙之奇瑰，足矣。余虽驽钝，而事在人为，愿与诸君共勉。</p>
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       </div>
       <!--中文部分完-->
   
       <!--这里是日文部分-->
-      <div id="c_ja" class=" hidden ">
+      <div id="c_ja">
 
 <h3>ぼく</h3>
 
@@ -87,13 +81,13 @@ QQ：515166698
 <h3>テキスト</h3>
 <p>僕は中国人崔灏（サイコウ、本当に最高な名前^^）です。いま、高校に一生懸命に勉強しています。</p>
 <p>僕は日本の文化やアニメや日本語に興味がある。暇があれば、日本語を自学します。将来日本へ行きたいです。</p>
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       </div>
       <!--日文部分完-->
   
 
       <!--这里是英文部分-->
-      <div id="c_en" class=" hidden ">
+      <div id="c_en">
 
 <h3>ME</h3>
 
@@ -108,9 +102,10 @@ Email: cuihao dot leo at gmail dot com</pre>
 <p>I am cuihao, a highschool student from China. Under high pressure, I am working hard now.</p>
 <p>I am a Linux user active in Chinese community. My favorite distribution is Archlinux and I am maintaining some packages of it.</p>
 <p>Besides, I am interested in natural science very much. I want to become a scientist in the future.</p>
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       </div>
       <!--英文部分完-->
+      </div>
 
     </section>
       
@@ -118,7 +113,7 @@ Email: cuihao dot leo at gmail dot com</pre>
       <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
     </footer>
   </div>
-    
+
   <script src="javascripts/scale.fix.js"></script>
 
 </body>
