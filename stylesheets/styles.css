@@ -62,7 +62,6 @@ pre {
 header {
   width:20em;
   float:left;
-  position:fixed;
 }
 
 header ul {
@@ -132,8 +131,7 @@ small {
 footer {
   width:20em;
   float:left;
-  position:fixed;
-  bottom:4em;
+  margin-top:16em;
 }
 
 #tab_content {height:32em; overflow:hidden;}
