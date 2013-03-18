@@ -1,0 +1,44 @@
+body {
+  padding:0.8em;
+  background-repeat:no-repeat;
+  background-image:url('chuncai.png'); 
+  background-attachment:fixed;
+  background-color:Grey;
+  background-position:bottom right;
+  font-size:1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color:#222;
+  margin:0 0 0.4em;
+}
+
+p {
+  margin:0 0 0.5em;
+}
+
+ul {
+  margin:0 0 1.2em;
+  font-size:0.6em;
+}
+
+a {
+  font-weight:400;
+  text-decoration:none;
+}
+
+pre {
+  padding:0.5em 1em;
+  background: LightGrey;  
+  border-radius:0.3em;
+  border:0.1em solid #e5e5e5;
+  font-size:0.8em;
+  overflow-x: auto;
+}
+
+section {
+  width:34em;
+  float:left;
+}
+
+#tab_content {height:32em; overflow:hidden;}
