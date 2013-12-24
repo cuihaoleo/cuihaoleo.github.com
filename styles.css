@@ -41,4 +41,19 @@ section {
   float:left;
 }
 
-#tab_content {height:32em; overflow:hidden;}
+#tab_content {
+  height:32em;
+  overflow:hidden;
+  margin-top: 20px;
+}
+
+.button { 
+  margin: 0 0.2em;
+  text-align: center;
+  text-decoration: none;
+  font-size:0.7em;
+  padding: .5em 2em .55em;
+  color: #d0d0d0;
+  border: solid 1px #555;
+  background: #6e6e6e;
+}
