@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/solid.css" integrity="sha384-+0VIRx+yz1WBcCTXBkVQYIBVNEFH1eP6Zknm16roZCyeNg2maWEpk/l/KsyFKs7G" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/brands.css" integrity="sha384-1KLgFVb/gHrlDGLFPgMbeedi6tQBLcWvyNUN+YKXbD7ZFbjX6BLpMDf0PJ32XJfX" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css" integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Slabo+27px" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>CUI Hao's Homepage</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-light transparent">
+            <a class="navbar-brand" href="#">CUI Hao</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto"></ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://home.ustc.edu.cn/~cvhc/">Research</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">Blog</a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="https://blog.i-yu.me/en/">English</a>
+                            <a class="dropdown-item" href="http://cuihao.is-programmer.com/">Chinese</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://blog.i-yu.me/">Archive</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">Social</a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#contactModal">Contact Me</a>
+                            <a class="dropdown-item" href="https://www.douban.com/people/44558614/">Douban</a>
+                            <a class="dropdown-item" href="https://github.com/cuihaoleo">GitHub</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#friendModal">Friends</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container" id="content">
+            <div class="row p-2">
+                <div class="d-flex justify-content-center col-12">
+                    <img src="https://www.gravatar.com/avatar/b3a8ac9c5348659127f7da4cfa34ceab.png?s=160" id="avatar" alt="Avatar" class="m-2">
+                    <div class="d-flex align-items-start flex-column ml-2" style="height: 160px;">
+                        <div class="mb-auto"></div>
+                        <h1 class="mb-0 title">CUI Hao</h1>
+                        <div class="tab-content title" style="width: 120px;">
+                            <div id="slogan1" class="tab-pane fade show active">
+                                nice to meet you
+                            </div>
+                            <div id="slogan2" class="tab-pane fade">
+                                a researcher
+                            </div>
+                            <div id="slogan3" class="tab-pane fade">
+                                a geek
+                            </div>
+                            <div id="slogan4" class="tab-pane fade">
+                                something more...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-2">
+                <div class="col-12 col-sm-2">
+                    <div class="nav flex-row flex-sm-column nav-pills justify-content-around" role="tablist">
+                        <span data-toggle="pill" data-target="#slogan1">
+                            <a href="#pill1" data-toggle="pill" data-target="#pill1" class="intro-icon nav-link active text-center">
+                                <i class="fas fa-user"></i>
+                            </a>
+                        </span>
+                        <span data-toggle="pill" data-target="#slogan2">
+                            <a href="#pill2" data-toggle="pill" data-target="#pill2" class="intro-icon nav-link text-center">
+                                <i class="fas fa-graduation-cap"></i>
+                            </a>
+                        </span>
+                        <span data-toggle="pill" data-target="#slogan3">
+                            <a href="#pill3" data-toggle="pill" data-target="#pill3" class="intro-icon nav-link text-center">
+                                <i class="fas fa-code"></i>
+                            </a>
+                        </span>
+                        <span data-toggle="pill" data-target="#slogan4">
+                            <a href="#pill4" data-toggle="pill" data-target="#pill4" class="intro-icon nav-link text-center">
+                                <i class="fas fa-heart"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-10 p-2 p-sm-0">
+                    <div class="tab-content ml-2 intro-text">
+                        <div id="pill1" class="tab-pane fade show active">
+                            <p class="m-2">
+                            This is <u>Cui Hao</u>.
+                            I also use the name <u>cvhc</u> and <u>cuihaoleo</u> online.
+                            </p>
+                            <p class="m-2">
+                            I'm a Chinese student, a researcher and a geek.
+                            </p>
+                            <p class="m-2">
+                            I'm not a social people. But feel free to contact me online.
+                            </p>
+                        </div>
+                        <div id="pill2" class="tab-pane fade">
+                            <p class="m-2">
+                            I'm a master's student in <abbr title="Electronic and Communication Engineering">ECE</abbr> at
+                            <a href="https://www.ustc.edu.cn/"><abbr title="University of Science and Technology of China">USTC</abbr></a>.
+                            I majored in <u>Geophysics</u> and <abbr title="Computer Science">CS</abbr> for my undergraduate study.
+                            </p>
+                            <p class="m-2">
+                            My current research is about <u>robust image watermarking</u>,
+                            under the supervision of <a href="http://staff.ustc.edu.cn/~zhangwm/">Prof. Zhang Weiming</a>.
+                            </p>
+                            <p class="m-2">
+                            Check my <a href="http://home.ustc.edu.cn/~cvhc/">research CV</a> for more details.
+                            </p>
+                        </div>
+                        <div id="pill3" class="tab-pane fade">
+                            <p class="m-2">
+                            I'm an enthusiast of computer technology.
+                            My technology stack ranges from C and Python programming to Linux administration.
+                            </p>
+                            <p class="m-2">
+                            I was the <abbr title="Chief Technology Officer">CTO</abbr> of <a href="https://lug.ustc.edu.cn/"><abbr title="USTC Linux User Group">LUG@USTC</abbr></a>, responsible for server maintenance.
+                            Now I'm maintaining a small Linux cluster of our research group.
+                            </p>
+                            <p class="m-2">
+                            Check my <a href="https://github.com/cuihaoleo">GitHub profile</a> to see my works!
+                            </p>
+                        </div>
+                        <div id="pill4" class="tab-pane fade">
+                            <p class="m-2">
+                            I'm in a relationship with <a href="http://home.ustc.edu.cn/~jenny42/">jenny42</a>.
+                            She runs fast.
+                            Her half-marathon personal best is 1:46:25, and mine is 1:59:02.
+                            </p>
+                            <p class="m-2">
+                            I play video games. <u>Starcraft</u> and <u>Pokemon</u> (GBA/2DS) are the games I put most time into.
+                            Also see my <a href="https://steamcommunity.com/id/cuihao">Steam profile</a>.
+                            </p>
+                            <p class="m-2">
+                            I used to watch anime a lot.
+                            I taught myself Japanese, and passed the passed <abbr title="Japanese-Language Proficiency Test">JLPT</abbr> N2 with my Chinese proficiency.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="float-right align-bottom">
+                <p class="m-1">
+                <a href="#">V1</a> |
+                <a href="#">V2</a> |
+                <a>V3</a>:
+                powered by Bootstrap 4
+                </p>
+            </div>
+        </footer>
+
+        <div class="modal fade" id="contactModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Contact Me</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-unstyled">
+                            <li>
+                                <i class="fas fa-fw fa-envelope"></i>
+                                <strong>Email:</strong>
+                                cuihao.leo@gmail.com
+                            </li>
+                            <li>
+                                <i class="fas fa-fw fa-envelope"></i>
+                                <strong>Email:</strong>
+                                cvhc@mail.ustc.edu.cn
+                            </li>
+                            <li>
+                                <i class="fab fa-fw fa-telegram"></i>
+                                <strong>Telegram:</strong>
+                                <a href="https://telegram.me/cuihao" target="_blank">@cuihao</a>
+                            </li>
+                            <li>
+                                <i class="fab fa-fw fa-weixin"></i>
+                                <strong>Wechat:</strong>
+                                <a href="data:image/png;base64, 
+                                iVBORw0KGgoAAAANSUhEUgAAAHQAAAB0AQMAAABuVIRkAAAABlBMVEUAAAD/
+                                //+l2Z/dAAAACXBIWXMAAAsSAAALEgHS3X78AAAAwElEQVQ4y53UuRVdMQzF
+                                QHSA/ru8HcCB/rFT8zHSZBQ3ANNQfnGy5aPWB6MlqfjNCNRnrzC/uWSw/v3v
+                                YsBf/K3vxVUjne91NAgbbNvuLlIdwzgbIDdjtrOXlcuX19UmU1zNu5lZvl3g
+                                bjPchLmzbZNszN09XyG2Nu92ZG8albvVNZByd+ebKFr7YHLKAuHsKt89iA9+
+                                C+VCcWdbtmr2+ns0yhj9+vHFr5G/a/LFbxBhd5es3km5+6UAtP2t7//7D3ZD
+                                nfcFrBfEAAAAAElFTkSuQmCC" target="_blank">@cuihaoleo</a>
+                            </li>
+                            <li>
+                                <i class="fab fa-fw fa-qq"></i>
+                                <strong>QQ:</strong>
+                                <a href="tencent://message/?uin=515166698" target="_blank">515166698</a>
+                            </li>
+                        </ul>  
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="friendModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Friends</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        Coming soon...
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+        <script>
+var prev_width = 0, prev_height = 0;
+
+$(".intro-icon").each(function (idx) {
+    $(this).on("click", function() {
+        $(".intro-icon.active").removeClass("active");
+    });
+});
+
+function setup() {
+    canvas = createCanvas(prev_width = windowWidth, prev_height = windowHeight);
+    noLoop();
+}
+
+function windowResized() {
+    if (windowWidth > prev_width || windowHeight > prev_height) {
+        resizeCanvas(windowWidth, windowHeight);
+    }
+}
+
+function draw() {
+    background(0, 0, 0, 0);
+    fill(255);
+    strokeWeight(0);
+    const box_size = 12;
+    for (var x=0; x<width; x+=box_size) {
+        var x_scale = x / width;
+        var s1 = Math.cos(x_scale * 60);
+        var s2 = Math.cos(x_scale * 6);
+        var signal = 0.4 * Math.abs(s1 * s2);
+        var n1 = noise(x_scale * 40, 0) * 0.1;
+        var n2 = noise(x_scale * 40, 1) * 0.1;
+        var a = (0.5 - (signal + n1)) * height;
+        var b = (0.5 + (signal + n2)) * height;
+
+        for (var y=0; y<height; y+=box_size) {
+            if (y > a && y < b) {
+                fill(0xFF, 0x41, 0x36, 16);
+            } else {
+                fill(0x00, 0x74, 0xD9, 16);
+            }
+            rect(x+2, y+2, box_size-1, box_size-1);
+        }
+    }
+}
+        </script>
+    </body>
+</html>
