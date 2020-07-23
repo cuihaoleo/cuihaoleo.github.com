@@ -80,6 +80,13 @@ body {
     margin: 0.2rem 0.2rem 0.2rem 0;
 }
 
+.key-box {
+    font-size: 70%;
+    white-space: pre-wrap;
+    word-break: break-all;
+    margin-bottom: 0;
+}
+
 footer {
     position: absolute;
     bottom: 0;

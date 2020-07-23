@@ -3,10 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/solid.css" integrity="sha384-+0VIRx+yz1WBcCTXBkVQYIBVNEFH1eP6Zknm16roZCyeNg2maWEpk/l/KsyFKs7G" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/brands.css" integrity="sha384-1KLgFVb/gHrlDGLFPgMbeedi6tQBLcWvyNUN+YKXbD7ZFbjX6BLpMDf0PJ32XJfX" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/fontawesome.css" integrity="sha384-jLuaxTTBR42U2qJ/pm4JRouHkEDHkVqH0T1nyQXn1mZ7Snycpf6Rl25VBNthU4z0" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/solid.min.css" integrity="sha512-QN7X/bUbbeel9bbq6JVNJXk1Zowt+n+QPN+DjhEmTa4TdL1YPCsCey5JrvfRW8xp28LDYgGG/waNVdrhwMQmVQ==" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/brands.min.css" integrity="sha512-AMDXrE+qaoUHsd0DXQJr5dL4m5xmpkGLxXZQik2TvR2VCVKT/XRPQ4e/LTnwl84mCv+eFm92UG6ErWDtGM/Q5Q==" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css" integrity="sha512-8jdwayz5n8F2cnW26l9vpV6+yGOcRAqz6HTu+DQ3FtVIAts2gTdlFZOGpYhvBMXkWEgxPN3Y22UWyZXuDowNLA==" crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Slabo+27px">
         <link rel="stylesheet" href="style.css">
         <title>CUI Hao's Homepage</title>
@@ -37,6 +37,9 @@
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">Social</a>
                         <div class="dropdown-menu dropdown-menu-right">
                             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#contactModal">Contact Me</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#pubkeyModal">Public Keys</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://keybase.io/cuihao">Keybase</a>
                             <a class="dropdown-item" href="https://www.douban.com/people/44558614/">Douban</a>
                             <a class="dropdown-item" href="https://github.com/cuihaoleo">GitHub</a>
                             <div class="dropdown-divider"></div>
@@ -207,6 +210,29 @@
                 </div>
             </div>
         </div>
+
+        <div class="modal fade" id="pubkeyModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Public Keys</h5>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>OpenPGP</h6>
+                        <pre class="key-box">gpg --keyserver hkps://keys.openpgp.org --recv-keys 9AF7EED0F7CE3639965C85619BA8AAAAAAAAAAAA</pre>
+                        <p><small>
+                            Note: There is no encryption subkey. This is intended.
+                        </small></p>
+
+                        <h6>OpenSSH</h6>
+                        <pre class="key-box">cert-authority ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBOssajyGQVxp3a1hUETJ4lLCZtIT0ovqqfBJkHhBCLd8f8LeEKRmD+FDK6sX9rN/cbQM2YcEhyXEkvQ6AwyIxf8= SSH CA of CUI Hao (cvhc)</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
 
         <div class="modal fade" id="friendModal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
